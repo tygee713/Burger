@@ -1,10 +1,10 @@
-# Express-MySQL-Handlebars-Template
-A template for an express server using a MySQL localhost connection and the handlebars file structure
+# Eat-the-Burger
+A restaurant app that lets users input the names of burgers they'd like to eat and then proceed to eat them.
 
 
 ### Overview
 
-Brief Description of Project 
+Brief Description of Project
 
 ### Getting Started
 
