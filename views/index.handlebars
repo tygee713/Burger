@@ -1,0 +1,36 @@
+<h1>Burgers App</h1>
+
+<h2>Your burgers:</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless this.devoured}}
+      <li>{{this.id}}. {{this.name}}</li>
+      <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button type="submit">Eat me!</button>
+      </form>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Devoured burgers:</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if this.devoured}}
+      <li>{{this.id}}. {{this.name}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a burger!</h2>
+
+<form action='burgers/create' method='POST'>
+  <div class="form-group">
+    <label for="burger">Type of burger:</label>
+    <input type="text" id="burger" name="name">
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
