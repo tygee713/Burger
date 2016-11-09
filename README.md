@@ -12,14 +12,14 @@ In order to download and run this web application, download the repository and t
 
 heroku link: type link here
 
-## Technologies used (fill in with applicable technologies)
+## Technologies Used
 - Node.js
 - mySQL
 - Sequelize
 - Handlebars
 - Bootstrap
 
-## Built With (fill in with applicable fields)
+## Built With
 
 * Node
 * Terminal
