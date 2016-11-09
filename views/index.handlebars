@@ -1,36 +1,66 @@
-<h1>Burgers App</h1>
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="text-center">Eat-the-Burger!</h1>
+  </div>
+</div>
 
-<h2>Your burgers:</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless this.devoured}}
-      <li>{{this.id}}. {{this.name}}</li>
-      <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="true">
-          <button type="submit">Eat me!</button>
-      </form>
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Devoured burgers:</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if this.devoured}}
-      <li>{{this.id}}. {{this.name}}</li>
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a burger!</h2>
-
-<form action='burgers/create' method='POST'>
-  <div class="form-group">
-    <label for="burger">Type of burger:</label>
-    <input type="text" id="burger" name="name">
+<div class="row" id="burgersSection">
+  <div class="col-md-6">
+    <h2 class="text-center">Your burgers:</h2>
+    <div class="container burgerList">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <ul class="list-group">
+          {{#each burgers}}
+            {{#unless this.devoured}}
+              <li>
+                <span>
+                  {{!--(This is where the ID would be but I chose to leave it out) {{this.id}}.  --}}{{this.name}}
+                </span>
+                <form action="burgers/update/{{this.id}}?_method=PUT" method="POST" id="eat">
+                    <input type="hidden" name="devoured" value="true">
+                    <button type="submit"><span class="glyphicon glyphicon-cutlery"></span> Eat me!</button>
+                </form>
+              </li>
+            {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
   </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+  <div class="col-md-6">
+    <h2 class="text-center">Devoured burgers:</h2>
+    <div class="container burgerList" id="devouredBurgers">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <ul class="list-group">
+          {{#each burgers}}
+            {{#if this.devoured}}
+              <li><span>{{!--(This is where the ID would be but I chose to leave it out) {{this.id}}.  --}}{{this.name}}</span></li>
+            {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="container" id="formSection">
+      <h2>Add a burger!</h2>
+      <form action="burgers/create" method="POST">
+        <div class="form-group">
+          <label for="burger">Type of burger:</label>
+          <input type="text" id="burger" name="name">
+        </div>
+        <button type="submit"><span class="glyphicon glyphicon-plus"></span> Add Burger</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>

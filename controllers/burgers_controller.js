@@ -23,9 +23,9 @@ router.post('/burgers/create', function(req, res) {
   Burger.create({
     name: newBurger.name,
     devoured: false
+  }).then(function(result) {
+    res.redirect('/index');
   });
-
-  res.redirect('/index');
 });
 
 //Changes a burger to devoured when the devoured button is pressed
