@@ -16,6 +16,7 @@ heroku link: type link here
 - Node.js
 - mySQL
 - Sequelize
+- Express
 - Handlebars
 - Bootstrap
 
