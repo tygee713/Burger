@@ -1,40 +1,27 @@
 # Eat-the-Burger
-A restaurant app that lets users input the names of burgers they'd like to eat and then proceed to eat them.
+An eating-simulator app that lets users input the names of burgers they'd like to eat and then proceed to devour them.  Yum.
 
 
 ### Overview
 
-Brief Description of Project
+This application was built using a mySQL database and the ORM Sequelize.  The goal was to be able to view, create and update database elements using Handlebars for templating the dynamic content.
 
 ### Getting Started
+
+In order to download and run this web application, download the repository and type "npm install" in the command line.  You must put your database credentials in the config.json file under 'development'.  You can then type "node server.js" in the command line and navigate to 'localhost:3000/' in the browser.
 
 heroku link: type link here
 
 ## Technologies used (fill in with applicable technologies)
 - Node.js
-- npm path (https://www.npmjs.com/package/path)
-- npm express (https://www.npmjs.com/package/express)
-- npm body-parser (https://www.npmjs.com/package/body-parser)
-
-### Prerequisites
-
-```
-See package.json
-```
-## Walk Through of Code 
-
-Fill with any code you tought was interesting or new tech
+- mySQL
+- Sequelize
+- Handlebars
+- Bootstrap
 
 ## Built With (fill in with applicable fields)
 
 * Node
-* Terminal/Gitbash
-* Sublime Text - Text Editor
-
-## Authors
-
-* **Name Here** - *JS/Express/Node.js* - [Name Here](Link to Github)
-
-## Acknowledgements
-
-Give Credit to those who helped in completion of project
+* Terminal
+* Sublime Text
+* mySQL
