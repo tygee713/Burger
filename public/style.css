@@ -1,0 +1,47 @@
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.row {
+  margin: 0px;
+}
+
+#formSection {
+  width: 100%;
+  text-align: center;
+}
+
+#burgersSection {
+  min-height: 200px;
+}
+
+.burgerList {
+  width: 100%;
+}
+
+#eat {
+  display: inline;
+  float: right;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  
+}
+
+li span {
+  font-size: 17px;
+}
+
+#devouredBurgers {
+  text-align: center;
+}
+
+img {
+  height: 200px;
+}
