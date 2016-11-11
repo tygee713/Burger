@@ -4,7 +4,7 @@ An eating-simulator app that lets users input the names of burgers they'd like t
 
 ### Overview
 
-This web application was built using an Express server, MySQL database and the ORM Sequelize.  The goal was to be able to view, create and update database elements using Handlebars for templating the dynamic content.
+This web application was built using an Express server, MySQL database and the ORM Sequelize.  The goal was to be able to view, create and update database elements and use Handlebars for templating the dynamic content.
 
 ### Getting Started
 
@@ -25,4 +25,4 @@ Heroku link: https://pacific-savannah-79965.herokuapp.com/
 * Node
 * Terminal
 * Sublime Text
-* mySQL
+* MySQLWorkbench
