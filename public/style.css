@@ -45,3 +45,8 @@ li span {
 img {
   height: 200px;
 }
+
+#burgerImage {
+  margin: auto;
+  display: block;
+}

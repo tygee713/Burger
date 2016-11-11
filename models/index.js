@@ -19,7 +19,7 @@ var sequelize;
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
-  sequelize = new Sequelize('burgerDB', 'root', 'password', {
+  sequelize = new Sequelize('burgerDB', 'root', '', {
     host: 'localhost',
     dialect: 'mysql',
     port: '3306'
